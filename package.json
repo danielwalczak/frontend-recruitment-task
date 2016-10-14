@@ -73,7 +73,8 @@
     "sass-loader": "^4.0.2",
     "style-loader": "^0.13.0",
     "webpack": "^2.1.0-beta.25",
-    "yargs": "^4.7.1"
+    "yargs": "^4.7.1",
+    "react-hot-loader": "^3.0.0-beta.5"
   },
   "devDependencies": {
     "babel-cli": "^6.14.0",
@@ -97,7 +98,6 @@
     "pre-commit": "^1.1.2",
     "pre-push": "^0.1.1",
     "react-addons-test-utils": "^15.1.0",
-    "react-hot-loader": "^3.0.0-beta.5",
     "sass-lint": "^1.5.1",
     "selenium-standalone": "^5.6.4",
     "sinon": "^1.17.3",
