@@ -1,0 +1,67 @@
+@import '../../../styles/utils/mixins';
+
+.viewport {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+
+  background-color: #3b4163;
+  padding: 15px;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.game {
+  flex: 1;
+  flex-basis: 0;
+
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  box-shadow: 3px 0 95px rgba(0, 0, 0, 0.26);
+  padding: 15px;
+  position: relative;
+  overflow: hidden;
+  max-width: 810px;
+  margin: 0 auto;
+  z-index: 0;
+
+  @include medium {
+    padding: 35px;
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    width: 300px;
+    height: 300px;
+    background-color: #4d69fa;
+    transform: rotate(45deg);
+    position: absolute;
+    bottom: -150px;
+    right: -150px;
+    z-index: -1;
+  }
+
+  &__top {
+    display: flex;
+    flex-flow: column;
+
+    @include medium {
+      flex-flow: row;
+    }
+
+
+    margin-bottom: 35px;
+  }
+
+  &__hangman-wrapper {
+    margin-left: -35px;
+    flex: 1;
+    flex-basis: 0;
+  }
+
+  &__missed-board-wrapper {
+    flex: 1;
+    flex-basis: 0;
+  }
+}

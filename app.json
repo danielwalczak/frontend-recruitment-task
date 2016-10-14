@@ -1,0 +1,12 @@
+{
+  "name": "hangman-game",
+  "scripts": {
+  },
+  "env": {
+    "NODE_ENV": {
+      "required": true
+    }
+  },
+  "addons": [
+  ]
+}

@@ -1,0 +1,43 @@
+@import '../../../../styles/utils/mixins';
+
+$fieldHeightSmall: 35px;
+$fieldHeightMedium: 70px;
+
+.guess-board {
+  display: flex;
+  flex-flow: row nowrap;
+
+  &__field {
+    flex: 1 auto;
+    flex-basis: 0;
+    order: 1;
+
+    background-color: #50525d;
+    opacity: .1;
+    height: $fieldHeightSmall;
+    border-radius: 5px;
+    float: left;
+    margin-right: 5px;
+    text-align: center;
+
+    @include medium {
+      height: $fieldHeightMedium;
+    }
+
+    &--active {
+      opacity: .98;
+      order: 2;
+    }
+  }
+
+  &__letter {
+    color: #fff;
+    font-size: 38px;
+    line-height: $fieldHeightSmall;
+    text-transform: uppercase;
+
+    @include medium {
+      line-height: $fieldHeightMedium;
+    }
+  }
+}

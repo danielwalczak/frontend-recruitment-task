@@ -1,0 +1,11 @@
+@import "base/resets";
+
+
+@font-face {
+  font-family: "AllerDisplay";
+  src: url("/fonts/AllerDisplay.ttf"), local("AllerDisplay");
+}
+
+body {
+  font-family: "AllerDisplay";
+}

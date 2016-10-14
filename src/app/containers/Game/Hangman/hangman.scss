@@ -1,0 +1,157 @@
+.hangman {
+  position: relative;
+  width: 174px;
+  height: 320px;
+
+  &__bar {
+    background-image: url("/imgs/bar.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: -100px;
+    width: 224px;
+    height: 38px;
+  }
+
+  &__head {
+    background-image: url("/imgs/head.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 53px;
+    top: 34px;
+    width: 96px;
+    height: 106px;
+    z-index: 10;
+  }
+
+  &__neck {
+    background-image: url("/imgs/neck.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 120px;
+    left: 89px;
+    width: 23px;
+    height: 33px;
+  }
+
+  &__corpus {
+    background-image: url("/imgs/corpus.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 148px;
+    left: 75px;
+    width: 52px;
+    height: 82px;
+    z-index: 10;
+  }
+
+  &__arm-left {
+    background-image: url("/imgs/left-arm.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 149px;
+    left: 32px;
+    width: 63px;
+    height: 61px;
+    z-index: 5;
+  }
+
+  &__hand-left {
+    background-image: url("/imgs/left-hand.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 197px;
+    left: 30px;
+    width: 15px;
+    height: 15px;
+  }
+
+  &__arm-right {
+    background-image: url("/imgs/right-arm.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 149px;
+    left: 107px;
+    width: 63px;
+    height: 61px;
+    z-index: 5;
+  }
+
+  &__hand-right {
+    background-image: url("/imgs/right-hand.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 197px;
+    left: 157px;
+    width: 15px;
+    height: 15px;
+  }
+
+  &__leg-left {
+    background-image: url("/imgs/left-leg.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 222px;
+    left: 59px;
+    width: 41px;
+    height: 89px;
+    z-index: 5;
+  }
+
+  &__foot-left {
+    background-image: url("/imgs/left-foot.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 301px;
+    left: 40px;
+    width: 42px;
+    height: 18px;
+  }
+
+  &__leg-right {
+    background-image: url("/imgs/right-leg.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 222px;
+    left: 102px;
+    width: 41px;
+    height: 89px;
+    z-index: 5;
+  }
+
+  &__foot-right {
+    background-image: url("/imgs/left-foot.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 301px;
+    left: 120px;
+    width: 42px;
+    height: 18px;
+    transform: scaleX(-1);
+  }
+
+}
